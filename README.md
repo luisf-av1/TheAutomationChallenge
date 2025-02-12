@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project automates data entry in the **Automation Challenge** form using **Playwright** and **Python**. The test dynamically reads 50 rows from an Excel file (`challenge.xlsx`) and fills in the corresponding form fields while handling CAPTCHA challenges.
+This project automates data entry in the **Automation Challenge** form using **Playwright** and **Python**. The test dynamically reads 50 rows from an Excel file (`challenge.xlsx`) and fills in the corresponding form fields while handling CAPTCHA challenges(https://www.theautomationchallenge.com/).
 
 ## 📁 Project Structure
 
