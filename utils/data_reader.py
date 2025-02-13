@@ -1,10 +1,10 @@
 import os
 import pandas as pd
 
-# 📌 Path where challenge.xlsx is located inside the data folder
+# Path where challenge.xlsx is located inside the data folder
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "challenge.xlsx")
 
-# 📌 Mapping of Excel column names to field names on the webpage
+# Mapping of Excel column names to field names on the webpage
 COLUMN_MAPPING = {
     "company_name": "Company Name",
     "company_address": "Address",
@@ -28,4 +28,4 @@ def read_challenge_data():
     # Convert the DataFrame into a list of dictionaries (each row = one insertion)
     data_list = df.to_dict(orient="records")
 
-    return data_list[:50]  # 🔹 Only the first 50 rows
+    return data_list[:50]  # Only the first 50 rows
