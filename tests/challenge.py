@@ -14,7 +14,7 @@ def test_validate_elements():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True) # Launch test in backgroung
 
-        page = setUpPage(p)
+        page = setUpPage(browser)
         page.goto("https://www.theautomationchallenge.com/", wait_until="domcontentloaded")
 
         # Get required pages (sections)
