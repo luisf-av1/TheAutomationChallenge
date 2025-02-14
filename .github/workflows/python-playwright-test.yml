@@ -40,5 +40,8 @@ jobs:
       run: |
         playwright install
     - name: Test with pytest
-      run: |
-        pytest tests/challenge.py
+      run: pytest tests/challenge.py
+      env:
+        EMAIL: ${{secrets.EMAIL}}
+        PASS: ${{secrets.PASS}}
+        
